@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(to right, transparent, #D9BBA0, #BF8C6F, #8C543F);
+}
+header h1{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #261D15;
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.541);
+}
+#tela_inicial{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+    margin-bottom:30px ;
+}
+#tela_inicial p{
+    font-size: 1.2em;
+}
+#tela_inicial input{
+    margin-top: 7px;
+}
+#tela_inicial input[type=button]:not(:last-child){
+    margin-right: 20px;
+}
+#tela_inicial input[type=button]{
+    padding: 5px;
+}
+#tela_inicial input[type=button]:hover{
+    background-color: #d9bba091;
+}
+
+#resultado_tela{
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#resultado_tela p{
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 5px;
+}
