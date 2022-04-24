@@ -47,13 +47,6 @@ btn_adicionar.addEventListener("click",function(){
         }
     }
     arr_num.push(new Formulario(nome, altura, sexo)); //Criando um array com os dados do formulário
-    for(let i = 0; i < arr_num.length; i++){
-        if(arr_num[i].sexo[1].checked){ //Verificar a quantidade homens e mulheres
-            console.log("Homem");
-        }else{
-            console.log("Mulher");
-        }
-    }
 } ,false);
 
 btn_calcular.addEventListener("click",function(){
@@ -76,5 +69,6 @@ btn_calcular.addEventListener("click",function(){
         }
     }
 
-    tela.innerHTML += ` Homens: ${homens} - Mulheres: ${mulheres} - Altura: ${maior_altura} - Posiçao: ${pos_altura}`
+    tela.innerHTML += ` <p>Total de Homens: ${homens} - Total de Mulheres: ${mulheres}.</p>`;
+    tela.innerHTML += `<p>A maior altura pertece a: <br>Nome: ${arr_num[pos_altura].nome} - Altura: ${maior_altura}</p>`;
 } ,false);
